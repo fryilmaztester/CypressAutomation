@@ -31,9 +31,9 @@ describe('FixtureSuite Test' , () => {
 
         cy.visit(urlStr); // Go to the url
 
-        cy.get(userNameLocator).type(user.user.userName); // userName
+        cy.get(userNameLocator).type(this.user.userName); // userName
 
-        cy.get(passWordLocator).type(user.user.passWord); // passWord
+        cy.get(passWordLocator).type(this.user.passWord); // passWord
 
         cy.get(submitButton).click(); // submitButton
 
