@@ -4,6 +4,14 @@
 
 To go back or forward in the browser's history, use the cy.go() command.
 
+cy.go("back"); // back
+cy.go(-1); // back
+
+
+cy.go("forward"); // forward
+cy.go(1); // forward
+
+
 To reload the page, use the cy.reload() command.
 
 */

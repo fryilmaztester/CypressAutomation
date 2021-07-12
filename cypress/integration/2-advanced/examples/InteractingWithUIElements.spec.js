@@ -90,7 +90,7 @@ describe("Interacting with UI Elements", () =>{
 
           it('Country search dropDown',  () => {
             
-            cy.get(comboBox).click({force: true} );
+            cy.get(comboBox).click({force: true} ); // we can use {force: true} because, befores test cover our select country area. So we want to click select country and select a coutnry. So we pass thiss issue this method.
 
             cy.get(textBox).type("Neth");
 
