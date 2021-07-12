@@ -23,3 +23,31 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+
+
+
+
+
+
+// var userNameLocator = "input[name='userName']";
+// var passWordLocator = "input[name='password']";
+// var submitButton = "input[value='Submit']";
+
+
+// var urlStr = "http://demo.guru99.com/test/newtours/";
+
+
+Cypress.Commands.add('login',(userName,passWord) => {
+
+        cy.visit("http://demo.guru99.com/test/newtours/");
+
+        cy.get("input[name='userName']").type(userName);
+
+
+        cy.get("input[name='password']").type(passWord);
+
+        cy.get("input[value='Submit']").click();
+
+    }
+)
